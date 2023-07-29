@@ -1,0 +1,16 @@
+CREATE TABLE store ("id" INTEGER PRIMARY KEY, name TEXT, color TEXT, size TEXT, quantity INTEGER, price INTEGER);
+INSERT INTO store VALUES(1,"Shirt","Black","XL",4,15);
+INSERT INTO store VALUES(2,"Shirt","Black", "L", 7, 15);
+INSERT INTO store VALUES(3,"Shirt","Black","M", 5, 15);
+INSERT INTO store VALUES(4,"Shirt","Black","S",4,15);
+INSERT INTO store VALUES(5,"Shirt","Green","XL",3,15);
+INSERT INTO store VALUES(6,"Shirt","Green","L",5,15);
+INSERT INTO store VALUES(7,"Shirt","Green","M",8,15);
+INSERT INTO store VALUES(8,"Shirt","Green","S",3,15);
+INSERT INTO store VALUES(9,"Shirt","Red","XL",6,15);
+INSERT INTO store VALUES(10,"Shirt","Red","L",3,15);
+INSERT INTO store VALUES(11,"Shirt","Red","M",2,15);
+INSERT INTO store VALUES(12,"Shirt","Red","S",7,15);
+
+SELECT * FROM store ORDER BY price;
+SELECT name FROM store WHERE size = "L";
